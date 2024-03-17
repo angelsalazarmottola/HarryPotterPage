@@ -1,0 +1,44 @@
+html {
+    cursor: url("/img/harryvaritas.png"), auto;
+    background-image: url("/img/videoharrypotter.mp4");
+}
+
+a:hover {
+    cursor: url("/img/harryvaritas.png"), auto;
+}
+
+body {
+  background-image: url("../img/castillo-hogwarts-espectacular-cielo-atardecer-mundo-magico-h_882954-27621.png");
+  margin:0;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Cinzel', serif;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+}
+
+.animate-float {
+  animation: float 2s infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.magia {
+  animation: aparecer 2s ease-in-out;
+}

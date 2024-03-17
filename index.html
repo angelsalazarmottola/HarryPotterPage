@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>HarryPotterPage</title>
+</head>
+<body>
+  
+  <div id="inicio" class="flex items-center justify-center h-screen bg-cover bg-center bg-gray-800">
+    <img class="w-full h-screen bg-cover bg-center" src="/img/map_2_copia.png" alt="mapa">
+    <div class="position-absolute">
+      <h2 class="text-white border-solid border-0 p-3 bg-red-950 rounded-full text-4xl font-bold font-lg text-center magia hover:opacity-80" id="abrirContenido">Juro solemnemente que mis intenciones no son buenas</h2>
+    </div>
+  </div>
+
+  <div id="contenidoOculto" class="hidden">
+    <header class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+        <img class="logo w-30 h-40" src="/img/hp-fonfonegro-PhotoRoom.png-PhotoRoom.png" alt="logo">
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 text-amber-500 hover:text-white" href="#home">Home</a>
+          <a class="mr-5 text-amber-500 hover:text-white" href="#">Personajes</a>
+          <a class="mr-5 text-amber-500 hover:text-white" href="#peliculas">Peliculas</a>
+          <a class="mr-5 text-amber-500 hover:text-white" href="#libros">Libros</a>
+          <a class="mr-5 text-amber-500 hover:text-white" href="#juegos">Juegos</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="casa">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-amber-500">¡Descubre tu casa en Hogwarts!
+          </h1>
+          <p class="mb-8 leading-relaxed text-white">"Oh, podrás pensar que no soy bonito. Pero no me juzgues por lo que vez, me comeré a mi mismo si puedes encontrar un sombrero más inteligente que yo. Puedes tener bombines negros, sombreros altos y elegantes. Pero yo soy el sombrero seleccionador de Hogwarts y puedo superar a todos. No hay nada escondido en tu cabeza que el sombrero seleccionador no pueda ver. Así que pruébame y te diré dónde debes estar. "</p>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 animate-float">
+          <a href="https://www.wizardingworld.com/sorting-hat" target="_blank2" rel="noopener noreferrer"><img class="object-cover object-center rounded-md hover:opacity-90" alt="HouseHogwarts" src="/img/sombrero.png"></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 animate-float">
+          <a href="/results.html" target="_blank"><img class="object-cover object-center h-full rounded-md hover:opacity-90" alt="personajes" src="/img/harry2022-copia.jpg"></a>
+          
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h2 class="title-font sm:text-4xl text-4xl mb-4 font-medium text-amber-500">¡Conoce los personajes de la saga!
+          </h2>
+        </div>
+      </div>
+
+      <div id="resultadoAPI">
+
+      </div>
+    </section>
+
+    <section id="peliculas">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-amber-500">Peliculas</h2>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://potterflix.scamanderweb.com/peliculas/harry-potter-y-la-piedra-filosofal/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/movie-1.jpg"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://potterflix.scamanderweb.com/peliculas/harry-potter-y-la-camara-secreta/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/movie-2.jpg"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://potterflix.scamanderweb.com/peliculas/harry-potter-y-el-prisionero-de-azkaban/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/movie-3.jpg"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://potterflix.scamanderweb.com/peliculas/harry-potter-y-el-caliz-de-fuego/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/movie-4.jpg"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://potterflix.scamanderweb.com/peliculas/harry-potter-y-la-orden-del-fenix/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/movie-5.jpg"></a>>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://potterflix.scamanderweb.com/peliculas/harry-potter-y-el-misterio-del-principe/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/movie-6.jpg"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://potterflix.scamanderweb.com/peliculas/harry-potter-y-las-reliquias-de-la-muerte-parte-1/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/movie-7.jpg"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://potterflix.scamanderweb.com/peliculas/harry-potter-y-las-reliquias-de-la-muerte-parte-2/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/movie-8.jpg"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="libros">
+      <h2 class="flex sm:text-3xl text-2xl font-medium title-font mb-4 text-amber-500 justify-center">LIBROS</h2>
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-amber-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-md inline-flex items-center justify-center">
+              <img src="/img/libro-1.webp" alt="book_1">
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <a class="font-medium title-font text-amber-500 mb-1 text-xl hover:text-white" href="/img/Rowling, J. K. -  Harry Potter y la piedra filosofal.pdf" target="_blank" rel="noopener noreferrer">Harry Potter y la Piedra Filosofal</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-amber-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+              <img src="/img/libro-2.webp" alt="book_2">
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <a class="font-medium title-font text-amber-500 mb-1 text-xl hover:text-white" href="/img/Rowling, J. K. - Harry Potter y la camara secreta.pdf" target="_blank" rel="noopener noreferrer">Harry Potter y la Cámara de los Secretos</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-amber-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+              <img src="/img/libro-3.webp" alt="book_3">
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <a class="font-medium title-font text-amber-500 mb-1 text-xl hover:text-white" href="/img/Rowling, J.K. - Harry Potter y el prisionero de Azkaban.pdf" target="_blank" rel="noopener noreferrer">Harry Potter y el Prisionero de Azkaban</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-amber-500 text-white relative z-10 title-font font-medium text-sm">4</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+              <img src="/img/libro-4.webp" alt="book_4">
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <a class="font-medium title-font text-amber-500 mb-1 text-xl hover:text-white" href="/img/Rowling, J.K. -  Harry Potter y el caliz de fuego.pdf" target="_blank" rel="noopener noreferrer">Harry Potter y el Caliz de Fuego</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-amber-500 text-white relative z-10 title-font font-medium text-sm">5</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+              <img src="/img/libro-5.webp" alt="book_5">
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <a class="font-medium title-font text-amber-500 mb-1 text-xl hover:text-white" href="/img/Rowling, J.K. - Harry Potter y la Orden del Fenix.pdf" target="_blank" rel="noopener noreferrer">Harry Potter y La Orden del Fenix</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-amber-500 text-white relative z-10 title-font font-medium text-sm">6</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+              <img src="/img/libro-6.webp" alt="book_6">
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <a class="font-medium title-font text-amber-500 mb-1 text-xl hover:text-white" href="/img/Rowling, J.K. -  Harry Potter y el misterio del principe.pdf" target="_blank" rel="noopener noreferrer">Harry Potter y El Principe Mestizo</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-amber-500 text-white relative z-10 title-font font-medium text-sm">7</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+              <img src="/img/libro-7.webp" alt="book_7">
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <a class="font-medium title-font text-amber-500 mb-1 text-xl hover:text-white" href="/img/Rowling, J.K. -  Harry Potter y las Reliquias de la Muerte.pdf" target="_blank" rel="noopener noreferrer">Harry Potter y Las Reliquias de la Muerte</a>
+            </div>
+          </div>
+      </div>
+      <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+        </div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-amber-500 text-white relative z-10 title-font font-medium text-sm">8</div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+            <img src="/img/libro-8.webp" alt="book_8">
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-amber-500 mb-1 text-xl hover:text-white">Harry Potter y el Legado Maldito</h2>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="text-gray-600 body-font" id="juegos">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-amber-500">JUEGOS</h2>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://www.hogwartslegacy.com/en-gb" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/le2.webp"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://www.harrypotterhogwartsmystery.com/es/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/hogwarts-mystery.webp"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://www.harrypottermagicawakened.com/global/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/magic-awakened__1_.webp"></a>
+            </div>
+          </div>
+          <div class="lg:w-1/4 sm:w-1/2 p-4">
+            <div class="flex relative">
+              <a href="https://www.zynga.com/games/harry-potter-puzzles-and-spells/" target="blank" rel="noopener noreferrer"><img alt="movie_1" class="inset-0 w-full h-full object-cover object-center" src="/img/puzzles-spells.webp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-24">
+      <div class="container px-3 mx-auto flex items-center sm:flex-row flex-col">
+        <img class="logo w-23 h-20" src="/img/Letras Png-PhotoRoom.png-PhotoRoom.png" alt="logo">
+        <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 mb-7 pb-2">© 2024 Angel Salazar 
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start mb-7 mr-3">
+          <a class="text-gray-500 w-10" href="https://github.com/angelsalazarmottola" target="_blank" rel="noopener noreferrer">
+            <img src="/img/github-logo-2.png" alt="">
+          </a>
+          <a class="ml-3 text-gray-500 w-10" href="https://www.linkedin.com/in/angel-salazar-mottola/" target="_blank" rel="noopener noreferrer">
+            <img src="/img/linkedin-logo.png" alt="">
+          </a>
+          <a class="ml-3 text-gray-500 w-10" href="https://www.instagram.com/mottolaangel/" target="_blank" rel="noopener noreferrer">
+            <img src="/img/instagram-logo.png" alt="">
+          </a>
+        </span>
+      </div>
+    </footer>
+  </div>
+    <script src="app.js"></script>
+</body>
+</html>
